@@ -8,6 +8,10 @@
     <title>Document</title>
 </head>
 <body>
+<h1>Best Movies List</h1>
+    <ul>
+        <li th:each="Movies : ${bestMovies}" th:text="|${Movies.getId()} ${Movies.getTitolo()}|"></li>
+    </ul>
 
 </body>
 </html>
